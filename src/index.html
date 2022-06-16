@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>
+      <%= htmlWebpackPlugin.options.title %>
+   </title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="page">
+   <header class="header">
+      <h1 class="header__title">Pepper ◊</h1>
+      <p class="header__desc">unsplash</p>
+   </header>
+   <nav class="nav">
+      <form id="search-form" autocomplete="off">
+         <div class="nav__search">
+            <input class="nav__search-input" id="search-input" type="text" placeholder="Search Unsplash">
+         </div>
+      </form>
+      <button class="nav__search-btn">Search</button>
+   </nav>
+   <main class="content">
+      <div class="content__images">
+         <div class="content__no-image-text">Search for an image to get something!</div>
+      </div>
+      <!-- <div class="content__actions">
+         <button class="content__button content__button--previous">Previous</button>
+         <button class="content__button content__button--next">Next</button>
+      </div> -->
+   </main>
+   <footer class="footer"><a class="footer__github" href="https://github.com/sayedmurtaza24/unsplash-pepper">GitHub
+         Page</a></footer>
+</body>
+
+</html>
