@@ -1,4 +1,4 @@
-version 0.2
+version: 0.2
 
 phases: 
   install:
@@ -15,7 +15,7 @@ phases:
       - echo Running test
       - npm t
       - echo Running build
-      - npm Run build
+      - npm run build
     
 artifacts:
   files:
