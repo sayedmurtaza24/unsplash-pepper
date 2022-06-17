@@ -9,6 +9,7 @@ const button = document.querySelector('.nav__search-btn');
 const searchResult = document.querySelector('.nav__search-input');
 
 button.addEventListener('click', () => {
+  // on click event
   saveSearchTerm(searchResult.value);
   window.history.pushState({ searchTerm: searchResult.value }, '', `/?search=${searchResult.value}`);
   window.dispatchEvent(new Event('popstate'));
