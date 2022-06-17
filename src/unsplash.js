@@ -1,4 +1,4 @@
-import { accessKey } from '../unsplash.config';
+import { accessKey } from '../config';
 
 function getData(searchTerm, callback) {
   fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchTerm}&client_id=${accessKey}`)
