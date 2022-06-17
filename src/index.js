@@ -17,7 +17,7 @@ button.addEventListener('click', () => {
 window.addEventListener('popstate', () => {
   getData(window.history.state.searchTerm, attachImages);
 });
-// when the page is reloaded
+// when the page is reloadeddd
 window.addEventListener('DOMContentLoaded', () => {
   const urlQueryParams = new URLSearchParams(window.location.search);
   if (urlQueryParams.get('search')) {
