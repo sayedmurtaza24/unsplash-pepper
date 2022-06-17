@@ -1,7 +1,7 @@
 import './styles/main.scss';
-import { saveSearchTerm } from '../storage.js';
-import { getData } from '../unsplash.js';
-import { attachImages, autocomplete } from '../dom.js';
+import { saveSearchTerm } from './storage';
+import getData from './unsplash';
+import { attachImages, autocomplete } from './dom';
 
 autocomplete(document.getElementById('search-input'));
 
