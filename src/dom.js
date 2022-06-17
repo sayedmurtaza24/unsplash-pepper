@@ -33,8 +33,8 @@ function autocomplete(inp) {
     }
   }
   inp.addEventListener('input', () => {
-    let b; let i; const
-      val = inp.value;
+    let b;
+    const val = inp.value;
     closeAllLists();
     if (!val) { return false; }
     currentFocus = -1;
@@ -43,15 +43,15 @@ function autocomplete(inp) {
     a.setAttribute('class', 'autocomplete__items');
     inp.parentNode.appendChild(a);
     const arr = getSearchTerms();
-    for (i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
       if (arr[i].substr(0, val.length).toUpperCase() === val.toUpperCase()) {
         b = document.createElement('DIV');
         b.innerHTML = `<strong>${arr[i].substr(0, val.length)}</strong>`;
         b.innerHTML += arr[i].substr(val.length);
-        b.innerHTML += `<input type='hidden' value='${arr[i]}'>`;
+        b.innerHTML += `<input id="item-${arr[i]}" type='hidden' value='${arr[i]}'>`;
         b.addEventListener('click', () => {
           // eslint-disable-next-line
-                      inp.value = inp.getElementsByTagName('input')[0].value;
+          inp.value = arr[i];
           closeAllLists();
         });
         a.appendChild(b);
