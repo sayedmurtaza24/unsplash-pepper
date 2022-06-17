@@ -1,10 +1,10 @@
-name: development-test-and-lint
+name: development-to-main-audit
 on: 
-  push:
+  pull_request:
     branches: 
-      - development
+      - main
 jobs:
-  check-test-version:
+  run-audit-on-main:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -12,5 +12,4 @@ jobs:
         with:
           node-version: '16'
       - run: npm i
-      - run: npm t
-      - run: npm run lint
+      - run: npm audit
