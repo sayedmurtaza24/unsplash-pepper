@@ -2,7 +2,7 @@ name: development-test-and-lint
 on: 
   push:
     branches: 
-    [ development ]
+      - development
 jobs:
   check-test-version:
     runs-on: macos-latest
