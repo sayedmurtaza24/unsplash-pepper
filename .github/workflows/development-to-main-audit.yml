@@ -1,10 +1,8 @@
 name: development-to-main-audit
 on: 
   pull_request:
-    types:
-      - closed
     branches:
-      - development
+      - main
 jobs:
   run-audit-on-main:
     runs-on: macos-latest
