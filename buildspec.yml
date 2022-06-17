@@ -11,7 +11,7 @@ phases:
       - echo installing dependencies
       - npm i
   build:
-    command:
+    commands:
       - echo Running test
       - npm t
       - echo Running build
