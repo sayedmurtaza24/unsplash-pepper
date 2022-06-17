@@ -3,8 +3,8 @@ on:
   pull_request:
     types:
       - closed
-    branches: 
-      - main
+    branches:
+      - development
 jobs:
   run-audit-on-main:
     runs-on: macos-latest
