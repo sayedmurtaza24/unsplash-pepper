@@ -4,7 +4,7 @@ function attachImages(images) {
   const imgElement = images ? images.map(image => `<div class="content__image-container">
       <img class="content__image" src="${image.url}" alt="">
       <div class="content__image-description">
-         <p>${image.description || 'No description'}</p>
+         <p>${(image.description || 'No description').split(' ').slice(0, 30).join(' ')}...</p>
       </div>
       </div> `).join('') : '';
   document.querySelector('.content__images').innerHTML = imgElement;
