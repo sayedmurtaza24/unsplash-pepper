@@ -1,4 +1,4 @@
-import { getSearchTerms, saveSearchTerm } from '../storage';
+import { getSearchTerms, saveSearchTerm } from '../src/storage';
 
 beforeAll(() => {
    class LocalStorageMock {
