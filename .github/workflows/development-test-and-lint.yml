@@ -1,0 +1,16 @@
+name: development-test-and-lint
+on: 
+  push:
+    branches: 
+    [ development ]
+jobs:
+  check-test-version:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3 
+        with:
+          node-version: '16'
+      - run: npm i
+      - run: npm t
+      - run: npm run lint 
