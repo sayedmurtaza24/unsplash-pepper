@@ -11,7 +11,7 @@ every search will have it's own history saved on history.
 previously searched terms as suggestions when searching.
 
 ## Contributers
-Project was done as a mob at </salt>.
+Project was done as a mob at __</salt>__.
 * [Martin Dospel](https://github.com/martindospel)
 * [Samira Tavakolli](https://github.com/samira020522)
 * [Me](https://github.com/sayedmurtaza24)
