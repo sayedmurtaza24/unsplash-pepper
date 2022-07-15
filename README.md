@@ -14,6 +14,7 @@ previously searched terms as suggestions when searching.
 Project was done as a mob at __salt__.
 * [Martin Dospel](https://github.com/martindospel)
 * [Samira Tavakolli](https://github.com/samira020522)
+* [Darko Jecinac](https://github.com/jecinacDarko)
 * [Me](https://github.com/sayedmurtaza24)
 
 ## License
